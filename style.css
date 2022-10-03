@@ -117,5 +117,45 @@ button, input{
 #task-submit:hover{
     background-color: #9a0dd6;
     color: var(--darkpurple);
-    transition: 50ms;
+    transition: 0.5s;
+}
+
+#task-submit:active{
+    opacity: 0.8;
+}
+
+main{
+    flex: 1 1 0%;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    max-width: 800px;
+    max-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+.task-list{
+    padding: 2rem;
+}
+
+.task-list h2{
+    font-size : 2.5rem;
+    font-weight: 300;
+    color: var(--lightgrey);
+    margin-bottom: 1.5rem;
+}
+
+#tasks .task{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    color : var(--lightgrey);
+    border-radius: 50px;
+    background-color: var(--darkerpurple);
+    padding: 0.5rem 1rem 0.5rem;
+    font-weight: bold;
 }
