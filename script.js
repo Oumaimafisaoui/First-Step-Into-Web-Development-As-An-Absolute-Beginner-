@@ -53,13 +53,19 @@ window.addEventListener('load', () =>
             {
                 inside.removeAttribute("readonly");
                 inside.focus();
-                addEdit.innerHTML = "Save";
+                addEdit.innerText = "Save";
             }
             else
             {
-                inside.setAttribute("readonly");
+                inside.setAttribute("readonly", "readonly");
+                addEdit.innerText = "Edit";
             }
             
+        })
+
+        addDelete.addEventListener('click', () =>
+        {   
+            elements.removeChild(element);
         })
     })
 })
