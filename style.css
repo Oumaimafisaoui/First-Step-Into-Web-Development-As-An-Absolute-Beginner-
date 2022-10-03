@@ -1,0 +1,121 @@
+:root{
+    --darkgrey: #374151;
+    --darkerpurple: #48125f;
+    --darkblack: #111827;
+    --lightgrey: #93a2b6;
+    --lightcolor: #ffffff;
+    --pinky: #e75e75;
+    --purple: #790c79;
+    --extragrey: #687280; 
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,1,10,1) 6%, rgba(136,24,200,1) 100%);
+    color: var(--lightcolor);  
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 3rem 2rem 3rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size : 2.5rem;
+    font-weight: 300;
+    color: var(--lightgrey);
+    margin-bottom: 1.5rem;
+}
+
+#tasks-form{
+    display: flex;
+}
+
+button, input{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task{
+    flex: 1 1 0%;
+    background-color: var(--darkerpurple);
+    border-radius: 50px;
+    padding: 0.5rem 1rem 0.5rem;
+    color: var(--lightcolor);
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+#new-task::placeholder{
+    color: var(--lightgrey);
+}
+
+#task-submit{
+    color : var(--lightgrey);
+    font-size: 1rem;
+    border-radius: 50px;
+    background-color: var(--darkerpurple);
+    padding: 0.5rem 1rem 0.5rem;
+    font-weight: bold;
+}
+#task-submit:hover{
+    background-color: #9a0dd6;
+    color: var(--darkpurple);
+    transition: 50ms;
+}
