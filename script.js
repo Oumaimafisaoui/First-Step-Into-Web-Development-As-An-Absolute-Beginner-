@@ -46,5 +46,20 @@ window.addEventListener('load', () =>
         element.appendChild(add);
         elements.appendChild(element);
         input.value = "";
+
+        addEdit.addEventListener('click', () =>
+        {
+            if(addEdit.innerText.toLowerCase() === "edit")
+            {
+                inside.removeAttribute("readonly");
+                inside.focus();
+                addEdit.innerHTML = "Save";
+            }
+            else
+            {
+                inside.setAttribute("readonly");
+            }
+            
+        })
     })
 })
