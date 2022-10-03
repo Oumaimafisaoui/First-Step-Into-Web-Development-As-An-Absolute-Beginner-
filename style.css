@@ -158,4 +158,49 @@ main{
     background-color: var(--darkerpurple);
     padding: 0.5rem 1rem 0.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
+
+#tasks .task .content .text{
+    color: var(--lightgrey);
+    font-size: 1rem;
+    display: block;
+    transition: 0.5s;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only)
+{
+    color: var(--lightcolor);
+}
+
+#tasks .task .add{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .add button{
+    cursor : pointer;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition : 0.4s;
+}
+
+.task .add button:hover{
+    opacity: 0.8;
+}
+
+.task .add button:active{
+    opacity: 0.6;
+}
+
+.task .actions .edit{
+    color: var(--lightcolor);
+}
+
+
+
+
+
+
